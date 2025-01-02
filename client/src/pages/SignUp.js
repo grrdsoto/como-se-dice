@@ -16,7 +16,7 @@ function SignUp() {
   const navigate = useNavigate();
 
   // Instantiate the 'pictureList' state. This state will be used to save the list of pictures retreived from the database.
-  const [pictureList, setPictureList] = useState();
+  const [pictureList, setPictureList] = useState([]);
 
   // Use effect that ONLY renders ONCE. Will retrieve the images from the database and add them to the 'pictureList' state.
   useEffect(() => {
